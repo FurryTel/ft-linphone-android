@@ -32,7 +32,7 @@ if (firebaseCloudMessagingAvailable) {
 }
 
 var gitBranch = ByteArrayOutputStream()
-var gitVersion = "6.2.6"
+var gitVersion = "6.2.7"
 
 task("getGitVersion") {
     val gitVersionStream = ByteArrayOutputStream()
@@ -100,8 +100,8 @@ android {
         applicationId = packageName
         minSdk = 28
         targetSdk = 35
-        versionCode = 60020006 // 6.002.0006
-        versionName = "6.2.6"
+        versionCode = 60020007 // 6.002.0007
+        versionName = "6.2.7"
 
         manifestPlaceholders["appAuthRedirectScheme"] = packageName
 
@@ -174,6 +174,7 @@ android {
 
         getByName("release") {
             isMinifyEnabled = true
+            isShrinkResources = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro",
