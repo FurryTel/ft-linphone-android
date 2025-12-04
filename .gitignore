@@ -13,3 +13,4 @@ app/release/
 app/bc-android.keystore
 .kotlin/
 keystore.properties
+.vscode/
