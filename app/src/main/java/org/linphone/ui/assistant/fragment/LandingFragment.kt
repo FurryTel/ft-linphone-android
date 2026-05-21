@@ -103,11 +103,7 @@ class LandingFragment : GenericFragment() {
         }
 
         binding.setThirdPartySipAccountLoginClickListener {
-            if (viewModel.conditionsAndPrivacyPolicyAccepted) {
-                goToLoginThirdPartySipAccountFragment(false)
-            } else {
-                showAcceptConditionsAndPrivacyDialog(goToThirdPartySipAccountLogin = true)
-            }
+            goToLoginThirdPartySipAccountFragment(true)
         }
 
         binding.setForgottenPasswordClickListener {
