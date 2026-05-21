@@ -39,7 +39,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:20853924048:android:6fc665a3ec4795c38afed5",
         "android_client_info": {
-          "package_name": "com.acceleratenetworks.mobile"
+          "package_name": "net.furrytel.dialer"
         }
       },
       "oauth_client": [
@@ -68,7 +68,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:20853924048:android:eff9dbeb145ce2768afed5",
         "android_client_info": {
-          "package_name": "com.acceleratenetworks.mobile.debug"
+          "package_name": "net.furrytel.dialer.debug"
         }
       },
       "oauth_client": [

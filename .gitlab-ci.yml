@@ -13,8 +13,8 @@ build:apk:
     - ./gradlew bundleRelease
     - cp app/build/outputs/apk/release/*.apk .
     - cp app/build/outputs/bundle/release/*.aab .
-    - if [[ "${CI_COMMIT_REF_NAME}" == "main" ]]; then python3 upload-app.py --track beta com.acceleratenetworks.mobile "$(./version.sh)"; fi
-    - if [[ "${CI_COMMIT_REF_NAME}" == "testing" ]]; then python3 upload-app.py --track alpha com.acceleratenetworks.mobile "$(./version.sh)"; fi
+    - if [[ "${CI_COMMIT_REF_NAME}" == "main" ]]; then python3 upload-app.py --track beta net.furrytel.dialer "$(./version.sh)"; fi
+    - if [[ "${CI_COMMIT_REF_NAME}" == "testing" ]]; then python3 upload-app.py --track alpha net.furrytel.dialer "$(./version.sh)"; fi
   variables:
     GIT_STRATEGY: clone
   artifacts:
